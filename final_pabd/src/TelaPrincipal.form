@@ -57,7 +57,7 @@
                           <Component id="jButton1" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace pref="21" max="32767" attributes="0"/>
+                  <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -162,7 +162,7 @@
                     <EmptyBorder bottom="5" left="5" right="5" top="5"/>
                   </Border>
                 </Property>
-                <Property name="round" type="int" value="20"/>
+                <Property name="round" type="int" value="30"/>
               </Properties>
 
               <Layout>
@@ -191,6 +191,9 @@
                   <SubComponents>
                     <Component class="Table" name="table1">
                       <Properties>
+                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                        </Property>
                         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                           <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
                             <EmptyBorder/>

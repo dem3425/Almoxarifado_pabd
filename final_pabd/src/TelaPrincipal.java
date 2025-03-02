@@ -10,12 +10,12 @@ import javax.swing.JOptionPane;
  *
  * @author Demétrio
  */
-public class Tela_estatisticas extends javax.swing.JFrame {
+public class TelaPrincipal extends javax.swing.JFrame {
 
     /**
      * Creates new form Tela_estatisticas
      */
-    public Tela_estatisticas() {
+    public TelaPrincipal() {
         initComponents();
         init();
     }
@@ -79,7 +79,7 @@ public class Tela_estatisticas extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(48, 48, 48)
                         .addComponent(jButton1)))
-                .addContainerGap(21, Short.MAX_VALUE))
+                .addGap(21, 21, 21))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -97,8 +97,9 @@ public class Tela_estatisticas extends javax.swing.JFrame {
 
         roundPanel2.setBackground(new java.awt.Color(255, 255, 255));
         roundPanel2.setBorder(javax.swing.BorderFactory.createEmptyBorder(5, 5, 5, 5));
-        roundPanel2.setRound(20);
+        roundPanel2.setRound(30);
 
+        table1.setBackground(new java.awt.Color(255, 255, 255));
         table1.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         table1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -177,20 +178,21 @@ public class Tela_estatisticas extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Tela_estatisticas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TelaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Tela_estatisticas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TelaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Tela_estatisticas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TelaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Tela_estatisticas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TelaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Tela_estatisticas().setVisible(true);
+                new TelaPrincipal().setVisible(true);
             }
         });
     }
