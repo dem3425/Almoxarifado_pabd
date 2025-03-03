@@ -33,7 +33,6 @@ public class RoundPanel extends JPanel {
         g2.setColor(getBackground());
         g2.fill(area);
         area.subtract(new Area(new Rectangle2D.Double(0, 0, getWidth(), getHeight() - 3)));
-        g2.setPaint(new Color(83, 101, 67));
         g2.fill(area);
         g2.dispose();
         super.paintComponent(g);
