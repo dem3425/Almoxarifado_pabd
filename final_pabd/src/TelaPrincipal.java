@@ -59,6 +59,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
         roundPanel3 = new RoundPanel();
         jScrollPane3 = new javax.swing.JScrollPane();
         table3 = new Table();
@@ -75,6 +76,14 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
         jPanel6 = new javax.swing.JPanel();
+        roundPanel17 = new RoundPanel();
+        jTextField8 = new javax.swing.JTextField();
+        roundPanel11 = new RoundPanel();
+        jLabel16 = new javax.swing.JLabel();
+        roundPanel18 = new RoundPanel();
+        jScrollPane9 = new javax.swing.JScrollPane();
+        table9 = new Table();
+        jLabel22 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         roundPanel5 = new RoundPanel();
         jScrollPane8 = new javax.swing.JScrollPane();
@@ -131,7 +140,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        setMaximumSize(new java.awt.Dimension(1120, 720));
         setMinimumSize(new java.awt.Dimension(1120, 720));
         setResizable(false);
         setSize(new java.awt.Dimension(1110, 720));
@@ -291,6 +299,9 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jLabel14.setForeground(new java.awt.Color(45, 45, 45));
         jLabel14.setText("3 meses");
 
+        jLabel23.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel23.setText("BOTAR BOTÃO PARA CONFERIR VENCIDOS!");
+
         javax.swing.GroupLayout roundPanel1Layout = new javax.swing.GroupLayout(roundPanel1);
         roundPanel1.setLayout(roundPanel1Layout);
         roundPanel1Layout.setHorizontalGroup(
@@ -306,7 +317,9 @@ public class TelaPrincipal extends javax.swing.JFrame {
                         .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(roundPanel1Layout.createSequentialGroup()
                         .addGap(20, 20, 20)
-                        .addComponent(jLabel11)))
+                        .addComponent(jLabel11)
+                        .addGap(60, 60, 60)
+                        .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 268, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(13, Short.MAX_VALUE))
             .addGroup(roundPanel1Layout.createSequentialGroup()
                 .addGap(110, 110, 110)
@@ -321,7 +334,9 @@ public class TelaPrincipal extends javax.swing.JFrame {
             roundPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, roundPanel1Layout.createSequentialGroup()
                 .addGap(12, 12, 12)
-                .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(roundPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel23))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(roundPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(roundPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -567,6 +582,8 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Estatisticas", jPanel2);
 
+        jPanel5.setBackground(new java.awt.Color(45, 45, 45));
+
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
@@ -575,20 +592,155 @@ public class TelaPrincipal extends javax.swing.JFrame {
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 715, Short.MAX_VALUE)
+            .addGap(0, 745, Short.MAX_VALUE)
         );
 
         jTabbedPane1.addTab("Devolucoes", jPanel5);
+
+        jPanel6.setBackground(new java.awt.Color(45, 45, 45));
+
+        roundPanel17.setBackground(new java.awt.Color(255, 255, 255));
+        roundPanel17.setRound(40);
+
+        jTextField8.setBackground(new java.awt.Color(255, 255, 255));
+        jTextField8.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jTextField8.setForeground(new java.awt.Color(45, 45, 45));
+        jTextField8.setText("Matrícula");
+        jTextField8.setToolTipText("Buscar");
+        jTextField8.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        jTextField8.setName(""); // NOI18N
+        jTextField8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField8jTextField2ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout roundPanel17Layout = new javax.swing.GroupLayout(roundPanel17);
+        roundPanel17.setLayout(roundPanel17Layout);
+        roundPanel17Layout.setHorizontalGroup(
+            roundPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(roundPanel17Layout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addComponent(jTextField8, javax.swing.GroupLayout.DEFAULT_SIZE, 227, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        roundPanel17Layout.setVerticalGroup(
+            roundPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(roundPanel17Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jTextField8, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        roundPanel11.setBackground(new java.awt.Color(255, 255, 255));
+        roundPanel11.setRound(45);
+
+        jLabel16.setIcon(new javax.swing.ImageIcon("C:\\Users\\demet\\Downloads\\fi-br-search (1).png")); // NOI18N
+        jLabel16.setToolTipText("Pesquisar");
+
+        javax.swing.GroupLayout roundPanel11Layout = new javax.swing.GroupLayout(roundPanel11);
+        roundPanel11.setLayout(roundPanel11Layout);
+        roundPanel11Layout.setHorizontalGroup(
+            roundPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(roundPanel11Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel16)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        roundPanel11Layout.setVerticalGroup(
+            roundPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel16, javax.swing.GroupLayout.DEFAULT_SIZE, 38, Short.MAX_VALUE)
+        );
+
+        roundPanel18.setBackground(new java.awt.Color(255, 255, 255));
+        roundPanel18.setBorder(javax.swing.BorderFactory.createEmptyBorder(5, 5, 5, 5));
+        roundPanel18.setRound(30);
+
+        table9.setBackground(new java.awt.Color(255, 255, 255));
+        table9.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        table9.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Matrícula", "Nome", "Turma", "Quantidade de Pedidos", "Pedidos"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.Integer.class, java.lang.Object.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        table9.getTableHeader().setReorderingAllowed(false);
+        jScrollPane9.setViewportView(table9);
+        table9.getColumnModel().getSelectionModel().setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+        if (table9.getColumnModel().getColumnCount() > 0) {
+            table9.getColumnModel().getColumn(0).setResizable(false);
+            table9.getColumnModel().getColumn(1).setResizable(false);
+            table9.getColumnModel().getColumn(2).setResizable(false);
+            table9.getColumnModel().getColumn(3).setResizable(false);
+            table9.getColumnModel().getColumn(4).setResizable(false);
+        }
+
+        jLabel22.setBackground(new java.awt.Color(45, 45, 45));
+        jLabel22.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        jLabel22.setForeground(new java.awt.Color(45, 45, 45));
+        jLabel22.setText("Materiais Disponíveis");
+
+        javax.swing.GroupLayout roundPanel18Layout = new javax.swing.GroupLayout(roundPanel18);
+        roundPanel18.setLayout(roundPanel18Layout);
+        roundPanel18Layout.setHorizontalGroup(
+            roundPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jScrollPane9, javax.swing.GroupLayout.DEFAULT_SIZE, 750, Short.MAX_VALUE)
+            .addGroup(roundPanel18Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel22)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        roundPanel18Layout.setVerticalGroup(
+            roundPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(roundPanel18Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel22, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, 559, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(20, 20, 20))
+        );
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
         jPanel6Layout.setHorizontalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 830, Short.MAX_VALUE)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addComponent(roundPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(roundPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(roundPanel18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(40, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 715, Short.MAX_VALUE)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(roundPanel17, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(roundPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(roundPanel18, javax.swing.GroupLayout.PREFERRED_SIZE, 613, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(53, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Alunos", jPanel6);
@@ -866,7 +1018,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
             table1.getColumnModel().getColumn(1).setResizable(false);
             table1.getColumnModel().getColumn(2).setResizable(false);
             table1.getColumnModel().getColumn(3).setResizable(false);
-            table1.getColumnModel().getColumn(3).setHeaderValue("Estado de Uso");
         }
 
         jLabel3.setBackground(new java.awt.Color(45, 45, 45));
@@ -1003,12 +1154,12 @@ public class TelaPrincipal extends javax.swing.JFrame {
                         .addComponent(roundPanel9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
                 .addComponent(roundPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 613, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(23, Short.MAX_VALUE))
+                .addContainerGap(53, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Consultar", jPanel3);
 
-        getContentPane().add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, -10, 830, 750));
+        getContentPane().add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, -40, 830, 780));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -1028,6 +1179,10 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private void jTextField7jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField7jTextField2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField7jTextField2ActionPerformed
+
+    private void jTextField8jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField8jTextField2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField8jTextField2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1076,12 +1231,15 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -1103,16 +1261,21 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JScrollPane jScrollPane7;
     private javax.swing.JScrollPane jScrollPane8;
+    private javax.swing.JScrollPane jScrollPane9;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField6;
     private javax.swing.JTextField jTextField7;
+    private javax.swing.JTextField jTextField8;
     private RoundPanel roundPanel1;
     private RoundPanel roundPanel10;
+    private RoundPanel roundPanel11;
     private RoundPanel roundPanel12;
     private RoundPanel roundPanel14;
     private RoundPanel roundPanel15;
     private RoundPanel roundPanel16;
+    private RoundPanel roundPanel17;
+    private RoundPanel roundPanel18;
     private RoundPanel roundPanel2;
     private RoundPanel roundPanel3;
     private RoundPanel roundPanel4;
@@ -1129,5 +1292,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private Table table6;
     private Table table7;
     private Table table8;
+    private Table table9;
     // End of variables declaration//GEN-END:variables
 }
